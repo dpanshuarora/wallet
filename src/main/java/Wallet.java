@@ -1,21 +1,21 @@
 public class Wallet {
+
   private int balance;
 
-  public void debit(int amt) {
+  protected void debit(int amt) {
     if(balance - amt < 0) {
-    System.out.println("The wallet balance is lower than " + amt);
+      System.out.println("The wallet balance is lower than " + amt);
     }
     else {
-    balance -= amt;
+      balance -= amt;
     }
-    }
+  }
 
-  public void credit(int amt) {
+  protected void credit(int amt) {
   	balance += amt;
   }
 
-  public int getBalance() {
+  protected int getBalance() {
     return balance;
   }
-  
 }
