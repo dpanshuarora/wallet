@@ -6,13 +6,13 @@ public class Owner {
     wallet = new Wallet();
   }
 
-  public void addMoney(int amt) {
-    wallet.credit(amt);
+  public void addMoney(int amount) {
+    wallet.credit(amount);
     System.out.println("Wallet Balance: " + wallet.getBalance());
   }
 
-  public void buy(int amt) {
-    wallet.debit(amt);
+  public void buy(int amount) {
+    wallet.debit(amount);
     System.out.println("Wallet Balance: " + wallet.getBalance());
   }
 }

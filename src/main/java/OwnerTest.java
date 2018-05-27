@@ -6,7 +6,7 @@ public class OwnerTest {
 
     owner.addMoney(500);
     owner.addMoney(200);
-    owner.buy(1000);
+    owner.buy(-1000);
     owner.buy(20);
   }
 }
