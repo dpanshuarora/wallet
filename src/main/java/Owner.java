@@ -15,4 +15,8 @@ public class Owner {
     wallet.debit(amount);
     System.out.println("Wallet Balance: " + wallet.getBalance());
   }
+
+  public int getWalletBalance() {
+    return wallet.getBalance();
+  }
 }

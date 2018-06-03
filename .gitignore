@@ -4,3 +4,7 @@
 
 ### macOS ###
 **.DS_Store
+
+### gradle ###
+.gradle/
+build/
