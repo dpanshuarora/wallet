@@ -22,18 +22,4 @@ public class OwnerTest {
     owner.buy(100);
     assertEquals(100, owner.getWalletBalance());
   }
-
-  @Test
-  public void checkBuyWhenBalanceInsufficient() {
-    owner.addMoney(100);
-    owner.buy(200);
-    assertEquals(100, owner.getWalletBalance());
-  }
-
-  @Test
-  public void checkBuyWhenNegativeAmountEnteredByOwner() {
-    owner.addMoney(100);
-    owner.buy(-900);
-    assertEquals(100, owner.getWalletBalance());
-  }
 }
